@@ -8,6 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^1.4.0",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.64.2",
+    "sass-loader": "^13.3.2",
     "vue": "^3.2.13"
   },
   "devDependencies": {
@@ -38,7 +42,20 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {}
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "endOfLine": "auto",
+          "singleQuote": true
+        }
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "@typescript-eslint/no-inferrable-types": "off"
+    }
   },
   "browserslist": [
     "> 1%",
