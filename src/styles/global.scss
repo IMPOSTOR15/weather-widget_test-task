@@ -1,0 +1,16 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+$weather-icon-size: 100px;
+$top-data-font: 2rem;
+$info-block-width: 170px;
+$main-gap: 10px;
+$default-border-color: #bdbdbd;
+$default-border-radius: 0.25rem;
+$focus-box-shadow-color: rgba(158, 158, 158, 0.25);
+$container-width: 400px;
+$icon-size: 30px;
+$aditional-info-gap: 20px;
