@@ -13,7 +13,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-#app {
+weather-widget {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
