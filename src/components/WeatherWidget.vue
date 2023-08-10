@@ -74,6 +74,7 @@ export default defineComponent({
     if (this.cities.length === 0 && 'geolocation' in navigator) {
       try {
         const coordinates = await this.getUserGeolocation();
+        // eslint-disable-next-line
         const response: any = await getWeatherFromCoordinates(
           coordinates.latitude,
           coordinates.longitude

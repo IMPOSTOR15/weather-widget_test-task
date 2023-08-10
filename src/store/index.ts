@@ -2,6 +2,7 @@ import { createStore } from 'vuex';
 import { getWeatherFromCityName } from '@/api';
 
 export interface WeatherData {
+  // eslint-disable-next-line
   [city: string]: any;
 }
 export interface State {
@@ -26,6 +27,7 @@ const store = createStore<State>({
       state.cities = cities;
       localStorage.setItem('cities', JSON.stringify(cities));
     },
+    // eslint-disable-next-line
     SET_WEATHER_DATA(state, payload: { city: string; data: any }) {
       state.weatherData[payload.city] = payload.data;
     },
