@@ -111,6 +111,12 @@ export default defineComponent({
   font-weight: bold;
   font-size: $top-data-font;
 }
+.info-block {
+  display: flex;
+  align-items: center;
+  width: $info-block-width;
+  gap: $main-gap;
+}
 .aditional-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
