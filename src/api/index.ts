@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'http://api.openweathermap.org/data/2.5/weather';
+const baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
 export async function getWeatherFromCityName(city: string) {
   const API_KEY: string = process.env.VUE_APP_WEATHER_API_KEY;
